@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1576259627130.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3787411745",
+    "id" : "1E686ED6",
+    "lastKnownWriteTime" : 1576259626,
+    "last_content_update" : 1576259626,
+    "path" : "~/Documents/GitHub/GreatSchoolsAPIProject/README.Rmd",
+    "project_path" : "README.Rmd",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

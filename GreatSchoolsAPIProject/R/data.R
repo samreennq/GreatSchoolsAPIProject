@@ -1,0 +1,36 @@
+#' School Search results using Browse.Schools for Albany, NY
+#'
+#' A dataset that contains the schools listed in GreatSchools
+#' directory for Albany, NY along with their parent and GreatSchools
+#' ratings, location, contact information and website links.
+#'
+#' @format A data frame with 56 rows and 23 variables:
+#' \describe{
+#'   \item{gsId}{identification number, as assigned by GreatSchools}
+#'   \item{name}{school name}
+#'   \item{type}{school type, such as "charter", "public", "private"}
+#'   \item{gradeRange}{the grades taught in the school, such as k-6, 9-12 etc.}
+#'   \item{enrollment}{the number of students enrolled in the school}
+#'   \item{parentRating}{Average ratings of parents who visited GreatSchools.com, 0-5}
+#'   \item{city}{The city where the school is located}
+#'   \item{state}{The state in which the school is located}
+#'   \item{address}{The street address of the school}
+#'   \item{phone}{The phone number for the school}
+#'   \item{fax}{The ax number for the school}
+#'   \item{website}{The school's website}
+#'   \item{ncesId}{The Identification number assigned by the National Center for Education Statistics}
+#'   \item{lat}{The latitude coordinate of the school}
+#'   \item{lon}{The longitude cooridnate of thesschool}
+#'   \item{overviewLink}{The Link to GreatSchools webpage that provide's overview of the school}
+#'   \item{ratingsLink}{The Link to GreatSchools webpage that provide's ratings for the school}
+#'   \item{reviewsLink}{The Link to GreatSchools reviews page}
+#'   \item{schoolStatsLink}{The Link to GreatSchools webpage that provide's school's statistics}
+#'   \item{gsRating}{The ratings assigned by GreatSchools using proprietary methods, 0-10}
+#'   \item{districtId}{The national identifican number for the school district}
+#'   \item{district}{The name of the school district}
+#'   \item{districtNCESId}{The identifican number for the school district as assigned by the NCES}
+#' }
+#'
+#' @source \url{https://api.greatschools.org/}
+#'
+"Browse.Schools.NY"

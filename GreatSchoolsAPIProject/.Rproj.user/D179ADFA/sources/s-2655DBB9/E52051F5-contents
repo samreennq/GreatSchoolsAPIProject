@@ -1,0 +1,29 @@
+Package: GreatSchoolsAPIProject
+Type: Package
+Title: Extract and organize School Search and School Census data from the GreatSchools APi. 
+      Also includes a function to find schools with high ratings according to school type along
+      with a function to combine the two datasets
+Version: 0.1.0
+Authors@R: person("Samreen", "Nayyer-Qureshi", email = "samreen.nayyer.qureshi@gmail.com",
+      role = c("aut", "cre"))
+Description: Allows one to extract important information about a large number of schools in a 
+      geographic location by city and state. Allows for separate datasets includingratings and 
+      school census data to be combined.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.99.9001
+Imports: 
+    dplyr,
+    httr,
+    purrr,
+    xml2,
+    rlist,
+    XML,
+    utils
+Depends: R (>= 2.10)
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
