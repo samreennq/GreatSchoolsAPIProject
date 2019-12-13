@@ -18,37 +18,22 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of GreatSchoolsAPIProject is to ...
+The goal of GreatSchoolsAPIProject is to access and extract information regarding schools based on state and city from GreatSchools.org's API. 
 
 ## Installation
 
-You can install the released version of GreatSchoolsAPIProject from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of GreatSchoolsAPIProject from [GitHub](https://github.com/samreennq/GreatSchoolsAPIProject/tree/master/GreatSchoolsAPIProject) with:
 
 ``` r
-install.packages("GreatSchoolsAPIProject")
+# install.packages("devtools")
+devtools::install_github("samreennq/GreatSchoolsAPIProject")
 ```
-
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example that shows how the GreatSchools API can be accessed using the `Browse.Schools()` function. More information is provided in the vignette. 
 
 ```{r example}
 library(GreatSchoolsAPIProject)
-## basic example code
+Browse.Schools("NY", "Albany", Sys.getenv("GreatSchoolsAPI"))
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!

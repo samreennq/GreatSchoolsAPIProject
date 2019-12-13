@@ -15,7 +15,7 @@ library(GreatSchoolsAPIProject)
 ## Introduction
 GreatSchools.org provides unparralleled information about a large number and variety of schools in the US. There are not many other sources that combine data from charter, public and private schools along with their ratings and demographic information the way GreatSchools does. 
 
-GreatSchoolsAPIProject uses the Great Schools API's freemium access which is generally granted to individual other insitutions with a basic GreatSchools.org account. The API Key requests must go through the GreatSchools's offices and are granted on a case by case basis. My Key is active and available until the end of the year 2019. 
+GreatSchoolsAPIProject uses the Great Schools API's freemium access which is generally granted to individuals and insitutions with a basic GreatSchools.org account. The API Key requests must go through the GreatSchools's offices and are granted on a case by case basis. My Key is active and available until the end of the year 2019. 
 
 There are ten data repositories available on GreatSchools API. A number of these API's cannot be accessed under the freemium access. Others offer information that is readily available and included in the Browse Schools and School Census Data reporsitories. For this reason, we will be accessing only these two subsets of the GreatSchools API. 
 
@@ -31,7 +31,7 @@ The following four functions are included in the GreatSchoolsAPIProject
 
 ### `Browse.Schools()` Functionality and Output
 
-Below is an example of how Browse.Schools() can be used to generate a list of schools within Oakland, CA. First 6 results are printed below. The parameter `Sys.getenv("GreatSchoolsAPI")` represents the API Key granted to me by GreatSChools.org
+Below is an example of how `Browse.Schools()` can be used to generate a list of schools within Oakland, CA. First 6 results are printed below. The parameter `Sys.getenv("GreatSchoolsAPI")` represents the API Key granted to me by GreatSChools.org
 
 ```{r}
 Browse.Oakland<-Browse.Schools("CA", "Oakland",Sys.getenv("GreatSchoolsAPI"))
@@ -76,6 +76,6 @@ This is the dataset created by running `Browse.Schools("NY", "Albany", Sys.geten
 
 ### Census.Schools.NY
 
-This is the ataset created by running `Census.Data(Browse.Schools.NY,Sys.getenv("GreatSchoolsAPI"))`. It includes records for 56 schools across 27 parameters. The documentation is provided in data1.R. 
+This is the ataset created by running `Census.Data(Browse.Schools.NY,Sys.getenv("GreatSchoolsAPI"))`. It includes records for 56 schools across 25 parameters. The documentation is provided in data1.R. 
 
 
